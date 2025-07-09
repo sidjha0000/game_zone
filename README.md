@@ -17,7 +17,7 @@ Access the live project here:
 7. **Memory Match Game** – Flip cards to find matching pairs.
 8. **Minesweeper** – Classic minesweeper to test your luck and strategy.
 9. **Room Escape** – Solve clues and unlock the doors to freedom.
-10. **Puzzle Game** – Rearrange pieces to complete the image.
+10. **Puzzle Game** – arrange the boxes given in the different shapes.
 
 ---
 
