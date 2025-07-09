@@ -1,6 +1,6 @@
 # 🎮 GameZone
 
-Welcome to **GameZone**, a collection of fun and interactive web games built using HTML, CSS, and JavaScript.  
+Welcome to **GameZone**, a collection of fun and interactive web games.  
 Access the live project here:  
 ➡️ **[Play Now on GameZone](https://sidjha0000.github.io/game_zone/)**
 
