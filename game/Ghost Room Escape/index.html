@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ghost Room Escape</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h1>👻 Ghost Room Escape</h1>
+      <h2 id="levelDisplay">Level: 1</h2>
+      <p>Use arrow keys to move. Don't move when the ghost is watching!</p>
+
+      <div id="message"></div>
+      <button onclick="restartGame()">🔁 Restart Level</button>
+
+      <!-- End Screen (left side) -->
+      <div id="endScreen" class="hidden">
+        <h3>🎉 You cleared all levels!</h3>
+        <button onclick="restartFullGame()">Restart Game</button>
+        <button onclick="quitGame()">Quit Game</button>
+      </div>
+
+      <!-- Game Over Screen (left side) -->
+      <div id="gameOverScreen" class="hidden">
+        <h3>💀 Game Over</h3>
+        <button onclick="restartFullGame()">Restart Game</button>
+        <button onclick="quitGame()">Quit Game</button>
+      </div>
+    </div>
+
+    <div id="game"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>

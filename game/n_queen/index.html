@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>N-Queens Puzzle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>♛ N-Queens Puzzle</h1>
+
+  <label for="boardSize">Board Size (N): </label>
+  <input type="number" id="boardSize" value="8" min="4" max="20">
+  <button onclick="startGame()">Start Game</button>
+
+  <div id="board" class="hidden"></div>
+
+  <h2 id="status"></h2>
+  <p id="timer">⏱ Time: 0s</p>
+
+  <div class="controls hidden" id="controls">
+    <button onclick="restartGame()">🔄 Restart</button>
+    <button onclick="autoSolve()">👾 Auto-Solve</button>
+    <button onclick="quitGame()">❌ Quit</button>
+    <button onclick="stepByStepSolve()">🧠 Step-by-Step Solve</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0e0e0e;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.game-container {
+  padding: 20px;
+}
+
+.labels {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  grid-template-rows: repeat(7, 60px);
+  gap: 2px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background: #222;
+  border: 1px solid #444;
+  position: relative;
+  cursor: pointer;
+}
+
+.cell.emitter::after {
+  content: '🔴';
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 36px;
+}
+
+.cell.target::after {
+  content: '🎯';
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 36px;
+}
+
+.cell.mirror {
+  background-color: #555;
+}
+
+.cell.mirror::after {
+  content: attr(data-type);
+  position: absolute;
+  font-size: 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cell.obstacle {
+  background-color: #000;
+}
+
+.cell.obstacle::after {
+  content: '⬛';
+  font-size: 28px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+
+.laser {
+  background-color: red !important;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background: #222;
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e53935;
+}
+#nextBtn {
+  background-color: #4caf50;
+}
+#nextBtn:hover {
+  background-color: #43a047;
+}

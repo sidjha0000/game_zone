@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7x7 Block Puzzle - Drag and Drop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>7x7 Block Puzzle</h1>
+  <div id="grid"></div>
+  <h2>Drag and Drop Shapes:</h2>
+  <div id="shapeContainer"></div>
+
+  <div id="grid" class="grid"></div>
+
+<div id="shapeContainer" class="shape-container"></div>
+
+
+<div id="gameOverModal" class="game-over-overlay" style="display: none;">
+  <div class="game-over-box">
+    <h2 style="color: rgb(136, 236, 28);">Game Over</h2>
+    <p style="color: rgb(53, 50, 211);">No more moves available.</p>
+    <button id="restartBtn">Restart</button>
+    <button id="quitBtn">Quit</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

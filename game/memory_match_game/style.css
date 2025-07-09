@@ -1,0 +1,40 @@
+body {
+  background: #1e1e1e;
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background: #444;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 32px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+  user-select: none;
+}
+
+.card.flipped {
+  background: #ffa500;
+}
+
+.card.matched {
+  background: #4caf50;
+  cursor: default;
+}

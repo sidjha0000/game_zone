@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Light Reflector Puzzle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>💡 Light Reflector Puzzle</h1>
+    <p class="labels">Emitter: 🔴 | Target: 🎯 | Mirror: / or \ | Obstacle: ⬛</p>
+    <div id="grid"></div>
+    <div class="controls">
+      <button id="startBtn">Start Laser</button>
+    </div>
+  </div>
+
+  <!-- Game Over Modal -->
+  <div id="gameOverModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>🎉 Puzzle Solved!</h2>
+      <button id="restartBtn">Restart</button>
+      <button id="quitBtn">Quit Game</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
